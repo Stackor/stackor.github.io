@@ -41,5 +41,11 @@
 
 <body>
   <div class="rotate">😃<div>
+  
+    <script>
+      let i = Math.floor(Math.random() * 10);
+      let emojis = ["😃","😁","😂","🙂","😊","🥰","🤩","😗","😘","😇"];
+      window.history.pushState({}, "", emojis[i]);
+    </script>
 </body>
 </html>

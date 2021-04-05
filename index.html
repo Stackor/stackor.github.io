@@ -7,10 +7,12 @@
   <!-- <link href="style.css" rel="stylesheet" -->
   <style>    
     body {
+      height: 100%;
+      width:100%;
       box-sizing: border-box;
       margin: 0;
       border: 0;
-      padding: 0;
+      padding: 30vh 0 0 0 0;
       text-align: center;
       color: white;
       background-color: rebeccapurple;
@@ -20,19 +22,23 @@
       overflow: hidden;
     } 
 
-    body, div {
-      height: 100%;
-      width:100%;
+    div.rotate {
+      animation: 2s ease-in-out 1s rotation;
+    }
+    @keyframes rotation {
+      0% rotate(0deg);
+      100% rotate(360 deg);
     }
     
-    div {
-      padding-top: 40vh;
+    tspan.phantom {
+      color: transparent;
     }
   </style>
 </head>
 
 <body>
-  <div>Hello world! 👋😊</div>
+  <div>Hello world!</div>
+  <div class="rotate">👋😊<span class="phantom">👋</span><div>
   <script>
   </script>
 </body>

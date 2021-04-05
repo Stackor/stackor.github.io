@@ -12,12 +12,12 @@
       box-sizing: border-box;
       margin: 0;
       border: 0;
-      padding: 25vh 0 0 0;
+      padding: 20vh 0 0 0;
+      font: 20vh Arial, sans-serif;
       text-align: center;
       color: white;
       background-color: rebeccapurple;
       filter: drop-shadow(.3em .4em .3em white);
-      font: 20vh Arial, sans-serif;
       user-select: none;
       overflow: hidden;
     } 
@@ -27,12 +27,12 @@
     }
     
     div.rotate {
-      animation: 2s ease-in-out 1s rotation;
+      animation: 2s ease-in-out 1s rotation infinite;
     }
     
     @keyframes rotation {
       0% {rotate(0deg);}
-      100% {rotate(360 deg);}
+      100% {rotate(359deg);}
     }
     
     span.phantom {
